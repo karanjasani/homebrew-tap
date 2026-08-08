@@ -5,21 +5,21 @@
 class Repomap < Formula
   desc "Deterministic repository intelligence for AI coding agents."
   homepage "https://github.com/karanjasani/agentkit"
-  version "0.1.0"
+  version "0.2.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/karanjasani/agentkit/releases/download/v0.1.0/repomap_0.1.0_darwin_amd64.tar.gz"
-      sha256 "548c9905286cf575c4a8339bca47e45b1e60137ff16cdec5c035b66c8007217f"
+      url "https://github.com/karanjasani/agentkit/releases/download/v0.2.0/repomap_0.2.0_darwin_amd64.tar.gz"
+      sha256 "f243668ef55a41a33dedfde96bf56865aa6e8ab97dac086aac7a5e05fbfe6f8d"
 
       define_method(:install) do
         bin.install "repomap"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/karanjasani/agentkit/releases/download/v0.1.0/repomap_0.1.0_darwin_arm64.tar.gz"
-      sha256 "10edbd02a00979a4bde62f2fbd944b64093069abfdd543a55a3b98f2e1b0fb40"
+      url "https://github.com/karanjasani/agentkit/releases/download/v0.2.0/repomap_0.2.0_darwin_arm64.tar.gz"
+      sha256 "c2c5dec9c7b37bfa275ea940dc790708a1821c28d0977ef0997c95ae90a15f5e"
 
       define_method(:install) do
         bin.install "repomap"
@@ -29,15 +29,15 @@ class Repomap < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/karanjasani/agentkit/releases/download/v0.1.0/repomap_0.1.0_linux_amd64.tar.gz"
-      sha256 "ea78a1bdfe9e5273439fed313e249eacf86adec18c81d8e1380afdc6e1e11850"
+      url "https://github.com/karanjasani/agentkit/releases/download/v0.2.0/repomap_0.2.0_linux_amd64.tar.gz"
+      sha256 "9d8eb6c83e3a7c3d40db6cc0667a5ce5a3993210c190064e7dde3d6b11d88d26"
       define_method(:install) do
         bin.install "repomap"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/karanjasani/agentkit/releases/download/v0.1.0/repomap_0.1.0_linux_arm64.tar.gz"
-      sha256 "27c7e3963bf64abc39effddd6ac11d71acb90b0de3c3703d85d6936294d0ce1c"
+      url "https://github.com/karanjasani/agentkit/releases/download/v0.2.0/repomap_0.2.0_linux_arm64.tar.gz"
+      sha256 "2f77ac50067b2f2e53b9d5ac19de1eee415260ca022e8134f357aadb42376990"
       define_method(:install) do
         bin.install "repomap"
       end
